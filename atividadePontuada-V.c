@@ -3,7 +3,7 @@
 #include <string.h>
 #include <locale.h>
 
-
+//ALUNOS: Raphael Elias e Marcelo Marques.
 
 void menuDeOpcoes (){
 printf ("\n+======================================================+\n");
@@ -11,7 +11,7 @@ printf ("|                BEM VINDO(a) AO MENU                  |\n");
 printf ("+======================================================+\n");
 printf ("| 1 - PRODUTOS A VENDA       | 2- PRODUTOS EM ESTOQUE  |\n");
 printf ("| 3 - VER CUPOM              | 4- ENTREGA              |\n");
-printf ("| 5 - PRODUTOS EM PROMO«√O   | 6- SAIR DO MENU         |\n");
+printf ("| 5 - PRODUTOS EM PROMO√á√ÉO   | 6- SAIR DO MENU         |\n");
 printf ("=======================================================+\n");
 }
 
@@ -30,7 +30,7 @@ int main (){
 	float codigo, cep;
 	
 	menuDeOpcoes ();
-	printf ("\nSelecione uma das opÁıes para continuar: ");
+	printf ("\nSelecione uma das op√ß√µes para continuar: ");
 	scanf("%d", &opcao);
 	
 	
@@ -42,12 +42,12 @@ switch (opcao){
         printf("Teclado usb Login \n");
         printf("Pendrive 32 gb Sandisk \n");
         
-        printf("\nDeseja ver os preÁos? (1 - Sim | 2- N„o) ");
+        printf("\nDeseja ver os pre√ßos? (1 - Sim | 2- N√£o) ");
         scanf ("%d", &preco);
         
         	if (preco == 1){
         		limparTela();
-        		printf("\nPRE«OS:");
+        		printf("\nPRE√áOS:");
         		printf("\nCaderno Tilibra - R$: 20,00 \n");
         		printf("Caderno Foroni - R$: 25,00\n");
         		printf("Mouse s/ fio Multilaser - R$: 30,00 \n");
@@ -69,7 +69,7 @@ switch (opcao){
     	printf ("\nCUPONS DE DESCONTO:");
     	printf ("\n DESC5 - "5%" de desconto");
     	printf ("\n DESC10 - "10%" de desconto");
-    	printf ("\nDESEJA INSERIR UM CUPOM? (1- Sim | 2- N„o)");
+    	printf ("\nDESEJA INSERIR UM CUPOM? (1- Sim | 2- N√£o)");
     	scanf ("%d", &cupom);
     		if (cupom == 1){
 			printf ("(1 - DESC5 | 2 - DESC10 ");
@@ -92,18 +92,18 @@ switch (opcao){
         printf("\nInforme o seu cep : ");
         scanf("%f",&cep);
         if (cep >=4110000) {
-            printf("O Item ser· entregue no prazo de 15 dias \n");
+            printf("O Item ser√° entregue no prazo de 15 dias \n");
         }else {
-            printf("O Item ser· entregue no prazo de 30 dias \n");
+            printf("O Item ser√° entregue no prazo de 30 dias \n");
         }
         break;
     case 5: 
-    	printf ("\nPRODUTOS EM PROMO«√O:");
+    	printf ("\nPRODUTOS EM PROMO√á√ÉO:");
     	printf("\nCaderno Tilibra - DE R$: 20,00 POR R$: 18,00\n");
         printf("Caderno Foroni - DE R$: 25,00 POR R$: 23,00\n");
         printf("Teclado usb Login - DE R$: 15,00 POR 13,00 \n");
 	case 6: 
-	      printf("Agradecemos pelo contato, AtÈ a Proxima!! \n");
+	      printf("Agradecemos pelo contato, At√© a Proxima!! \n");
             break;
         default:
             printf("Obrigado pela preferencia\n");
